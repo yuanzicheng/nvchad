@@ -76,6 +76,9 @@ return {
                     "LazyGit"
                 },
 
+                ["<leader>l"] = { name = " LSP" },
+                ["<leader>ld"] = { function() require("telescope.builtin").diagnostics() end, "Telescope Search Diagnostics" },
+
                 ["<leader>p"] = { name = " packages" },
                 ["<leader>pl"] = { "<cmd>Lazy<cr>", "Lazy" },
                 ["<leader>pm"] = { "<cmd>Mason<cr>", "Mason" },
